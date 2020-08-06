@@ -1,0 +1,30 @@
+
+
+.top-section {
+  background: #fff;
+  z-index: -99;
+}
+
+#form {
+  background: #ccc;
+  padding: 20px 10px;
+}
+
+#submitBtn {
+background-color: green;
+color: white;
+padding: 5px 3px;
+border-radius: 4px;
+border-color: green;
+}
+
+#submitBtn:hover {
+  background-color: lightgreen;
+  border-color: lightgreen;
+  cursor: pointer;
+}
+
+li {
+ list-style-type: none;
+}
+

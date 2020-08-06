@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>National Park API App</h1>
+    </header>
+    <section>
+      <div class="top-section">
+      <form id="form">
+      <label>Enter State Abbreviation (with Comma Separating)</label>
+      <input id="stateCode" type="text" placeholder="e.g. CA,WA">
+      <label>How Many Results?</label>
+      <input id="numberResults" type="number" min="1" max="50" value="10"> 
+      <input id="submitBtn" type="submit" value="Submit">
+      </div>
+      </form>
+      </section>
+      <section>
+        <div id="results"></div>
+        </section>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
