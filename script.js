@@ -31,7 +31,7 @@ const addressURL = 'https://developer.nps.gov/api/v1/visitorcenters'
 
 
   function formSubmit() { 
-     $('#form').on('submit', e => {
+     $('form').on('submit', e => {
       e.preventDefault();
           let stateCode = $('#stateCode').val().toUpperCase()
 
