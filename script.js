@@ -55,8 +55,17 @@ fetch(`https://developer.nps.gov/api/v1/places?stateCode=${stateCode}&api_key=${
 
   function displayResults(responseJson) {
     let results = $('#results');
+    let numResults = $('#numberResults').val()
+ if (numResults > responseJson.data.length) {
+    $('#warning').append(`<h3 class="warning-message">Warning: There is not enough data to fulfill max results filter. Please add state abbeviations and try again.</h3>`)
+    } else if(numResults == responseJson.data.length) {
+      $('#warning').empty()
+    }
+
  results.empty();
 for(let i = 0; i < responseJson.data.length; i++) {
+
+
   console.log(responseJson.data[i])
   let link = responseJson.data[i].url;
   let title = responseJson.data[i].title;
@@ -66,7 +75,7 @@ results.append(`
 <li class="list-item-${i + 1}">
 <h2>${title}</h2>
 <p>${desc}</p>
-<a href="${link}">Show More</a>
+<a href="${link}" target="_blank">Read More</a>
 </li>
 `)
 
