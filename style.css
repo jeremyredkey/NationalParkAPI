@@ -1,12 +1,7 @@
 
 
-.top-section {
-  background: #fff;
-  z-index: -99;
-}
-
-#form {
-  background: #ccc;
+form {
+  background: #ddd;
   padding: 20px 10px;
 }
 
